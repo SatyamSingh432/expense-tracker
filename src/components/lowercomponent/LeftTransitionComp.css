@@ -1,0 +1,30 @@
+.leftTransitionComp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 10px;
+}
+.leftTransitionCompChild {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 5px;
+}
+.leftTransitionCompChild p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.leftTransitionCompChild div {
+  color: #9b9b9b;
+}
+.leftTransitionComp-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}

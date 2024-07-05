@@ -1,0 +1,15 @@
+.transactionComp {
+  height: 12vh;
+  width: 55vw;
+  background-color: white;
+  margin-top: 18px;
+}
+.transactionComp-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transactionComp hr {
+  width: 53vw;
+  border: 1px solid #9b9b9b;
+}

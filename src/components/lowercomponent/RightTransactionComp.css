@@ -1,0 +1,15 @@
+.rightTransactionComp {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding-right: 10px;
+}
+.rightTransactionComp p {
+  font-weight: 700;
+  color: #f4bb4a;
+  font-size: 18px;
+}
+.rightTransactionComp-button {
+  display: flex;
+  gap: 5px;
+}

@@ -1,0 +1,18 @@
+.mainBox {
+  height: 33vh;
+  width: 96vw;
+  background-color: #626262;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 60px;
+}
+.addBox1 {
+  display: flex;
+  gap: 5vw;
+  padding-left: 6vw;
+}

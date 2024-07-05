@@ -1,0 +1,12 @@
+.addButton {
+  height: 38px;
+  width: 168px;
+  background-color: #b5dc52;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  font: Ubuntu;
+  border: none;
+  cursor: pointer;
+}

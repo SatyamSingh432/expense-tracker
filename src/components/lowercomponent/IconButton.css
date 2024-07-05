@@ -1,0 +1,12 @@
+.iButton {
+  cursor: pointer;
+  height: 37px;
+  width: 37px;
+  border-radius: 15px;
+  border: none;
+}
+img {
+  position: relative;
+  left: -10px;
+  top: -1px;
+}
