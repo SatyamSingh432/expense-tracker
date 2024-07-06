@@ -1,14 +1,12 @@
 import "./MainPage.css";
 import MainBox from "./uppercomponent/MainBox";
-import Transaction from "./lowercomponent/Transaction";
+import FinalLowerComponent from "./finalLowerComp/FinalLowerComponent";
 const MainPage = () => {
   return (
-    <>
-      <div className="mainPage">
-        <MainBox />
-        <Transaction />
-      </div>
-    </>
+    <div className="mainPage">
+      <MainBox />
+      <FinalLowerComponent />
+    </div>
   );
 };
 export default MainPage;

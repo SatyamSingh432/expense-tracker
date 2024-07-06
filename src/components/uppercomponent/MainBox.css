@@ -6,10 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 6vh;
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-bottom: 60px;
+  margin-bottom: 7vh;
 }
 .addBox1 {
   display: flex;
