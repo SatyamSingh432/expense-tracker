@@ -19,8 +19,8 @@ const BarChart1 = () => {
   return (
     <BarChart
       layout="vertical"
-      width={325}
-      height={206}
+      width={600}
+      height={400}
       data={data}
       margin={{
         top: 0,

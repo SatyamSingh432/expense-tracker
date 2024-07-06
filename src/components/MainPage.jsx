@@ -6,7 +6,7 @@ const MainPage = () => {
     <div className="mainPage">
       <MainBox />
       <FinalLowerComponent />
-    </div>
+    </div>̀
   );
 };
 export default MainPage;
