@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./BarChart1.css";
 import { BarChart, Bar, XAxis, YAxis } from "recharts";
+
 const BarChart1 = () => {
+  const [chartSize, setChartSize] = useState({
+    width: window.innerWidth * 0.35,
+    height: window.innerHeight * 0.4,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setChartSize({
+        width: window.innerWidth * 0.35,
+        height: window.innerHeight * 0.4,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const data = [
     {
       name: "Entertainment",
@@ -16,11 +34,12 @@ const BarChart1 = () => {
       uv: 2000,
     },
   ];
+
   return (
     <BarChart
       layout="vertical"
-      width={600}
-      height={400}
+      width={chartSize.width}
+      height={chartSize.height}
       data={data}
       margin={{
         top: 0,
@@ -36,4 +55,5 @@ const BarChart1 = () => {
     </BarChart>
   );
 };
+
 export default BarChart1;
