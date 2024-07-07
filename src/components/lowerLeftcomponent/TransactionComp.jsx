@@ -1,12 +1,12 @@
 import LeftTransitionComp from "./LeftTransitionComp";
 import RightTransactionComp from "./RightTransactionComp";
 import "./TransactionComp.css";
-const TransactionComp = () => {
+const TransactionComp = (props) => {
   return (
     <div className="transactionComp">
       <div className="transactionComp-child">
-        <LeftTransitionComp />
-        <RightTransactionComp />
+        <LeftTransitionComp data={props.data} />
+        <RightTransactionComp data={props.data} />
       </div>
       <hr />
     </div>

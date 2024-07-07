@@ -1,10 +1,10 @@
 import BarChartBox from "../lowerchartcomp/BarChartBox";
 import Transaction from "../lowerLeftcomponent/Transaction";
 import "./FinalLowerComponent.css";
-const FinalLowerComponent = () => {
+const FinalLowerComponent = (props) => {
   return (
     <div className="finalLowerComponent">
-      <Transaction />
+      <Transaction data={props.data} />
       <BarChartBox />
     </div>
   );

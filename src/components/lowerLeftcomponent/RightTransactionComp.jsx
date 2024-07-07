@@ -3,10 +3,10 @@ import iconCross from "./iconcross.png";
 import iconedit from "./iconedit.png";
 
 import "./RightTransactionComp.css";
-const RightTransactionComp = () => {
+const RightTransactionComp = (props) => {
   return (
     <div className="rightTransactionComp">
-      <p>150</p>
+      <p>₹{props.data.price}</p>
       <div className="rightTransactionComp-button">
         <IconButton img={iconCross} />
         <IconButton img={iconedit} />
