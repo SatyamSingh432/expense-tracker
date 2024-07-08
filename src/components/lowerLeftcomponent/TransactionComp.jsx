@@ -6,7 +6,7 @@ const TransactionComp = (props) => {
     <div className="transactionComp">
       <div className="transactionComp-child">
         <LeftTransitionComp data={props.data} />
-        <RightTransactionComp data={props.data} />
+        <RightTransactionComp data={props.data} dataModal={props.dataModal} />
       </div>
       <hr />
     </div>

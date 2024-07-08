@@ -8,7 +8,7 @@ const RightTransactionComp = (props) => {
     <div className="rightTransactionComp">
       <p>₹{props.data.price}</p>
       <div className="rightTransactionComp-button">
-        <IconButton img={iconCross} />
+        <IconButton img={iconCross} dataModal={props.dataModal} />
         <IconButton img={iconedit} />
       </div>
     </div>

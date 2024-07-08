@@ -51,7 +51,7 @@ const BarChart1 = () => {
     >
       <XAxis type="number" axisLine={false} tick={false} />
       <YAxis type="category" dataKey="name" axisLine={false} />
-      <Bar dataKey="uv" fill="#8784D2" barSize={40} />
+      <Bar dataKey="uv" fill="#8784D2" barSize={40} radius={[0, 20, 20, 0]} />
     </BarChart>
   );
 };

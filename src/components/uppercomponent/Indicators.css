@@ -1,0 +1,29 @@
+.box1 {
+  height: 8px;
+  width: 28px;
+  background: rgba(160, 0, 255, 1);
+}
+.box2 {
+  height: 8px;
+  width: 28px;
+  background: rgba(255, 147, 4, 1);
+}
+.box3 {
+  height: 8px;
+  width: 28px;
+  background: rgba(253, 224, 6, 1);
+}
+.indicator {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 36vh;
+  left: 75vw;
+  font-size: 10px;
+  color: white;
+}
+.indi {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

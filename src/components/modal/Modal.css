@@ -1,0 +1,37 @@
+.modal {
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.modal-add-btn {
+  width: 228px;
+  height: 51px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  background-color: rgba(244, 187, 74, 1);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modal-cancel-btn {
+  width: 160px;
+  height: 51px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  background-color: rgba(227, 227, 227, 1);
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+  position: relative;
+  width: 200px;
+  top: -4vh;
+  left: 1vw;
+}

@@ -1,7 +1,8 @@
 import "./MainBox.css";
 import AddBox from "./AddBox";
 import PieChartFig from "./PieChartFig";
-const MainBox = () => {
+import Indicator from "./Indicators";
+const MainBox = (props) => {
   return (
     <div className="mainBox">
       <div className="addBox1">
@@ -11,6 +12,7 @@ const MainBox = () => {
           content="Wallet Balance: "
           amount="4500"
           buttonText="+Add Income"
+          data={props.dataAmount}
         />
         <AddBox
           txtColor="rgba(255, 147, 4, 1)"
@@ -18,9 +20,13 @@ const MainBox = () => {
           content="Expenses: "
           amount="500"
           buttonText="+Add Expense"
+          data={props.data}
         />
       </div>
-      <PieChartFig />
+      <div className="pieIndicator">
+        <PieChartFig />
+        <Indicator />
+      </div>
     </div>
   );
 };

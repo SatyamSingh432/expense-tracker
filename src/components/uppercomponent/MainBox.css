@@ -17,3 +17,8 @@
   gap: 5vw;
   padding-left: 6vw;
 }
+.pieIndicator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
