@@ -18,6 +18,3 @@ const LeftTransitionComp = (props) => {
   );
 };
 export default LeftTransitionComp;
-{
-  /* <IoCarSharp /> */
-}
