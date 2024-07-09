@@ -4,7 +4,7 @@ import "./FinalLowerComponent.css";
 const FinalLowerComponent = (props) => {
   return (
     <div className="finalLowerComponent">
-      <Transaction data={props.data} />
+      <Transaction data={props.data} renderData={props.renderData} />
       <BarChartBox />
     </div>
   );

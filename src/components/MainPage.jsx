@@ -3,7 +3,7 @@ import MainBox from "./uppercomponent/MainBox";
 import FinalLowerComponent from "./finalLowerComp/FinalLowerComponent";
 import Modal from "./modal/Modal";
 import AddModal from "./modal/AddModal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 const MainPage = () => {
   const data = [
     {
@@ -59,6 +59,7 @@ const MainPage = () => {
   const [openAdd, setOpenAdd] = useState(false);
   const [openEdit, setOpenEdit] = useState(false);
   const [openAmount, setOpenAmount] = useState(false);
+  const [oldData, setUpdatedData] = useState(data);
   const modalHandlerAddOpen = () => {
     setOpenAdd(true);
   };
@@ -77,8 +78,15 @@ const MainPage = () => {
   const modalHandlerAmountClose = () => {
     setOpenAmount(false);
   };
-  let string = JSON.stringify(data);
-  localStorage.setItem("data", string);
+  const dataChangeUpdate = (data) => {
+    setUpdatedData(data);
+    let string23 = JSON.stringify(data);
+    localStorage.setItem("data", string23);
+  };
+  useEffect(() => {
+    let string = JSON.stringify(data);
+    localStorage.setItem("data", string);
+  }, []);
   return (
     <>
       <div className="mainPage">
@@ -89,12 +97,13 @@ const MainPage = () => {
           data={modalHandlerAddOpen}
           dataAmount={modalHandlerAmountOpen}
         />
-        <FinalLowerComponent data={modalHandlerEditOpen} />
+        <FinalLowerComponent data={modalHandlerEditOpen} renderData={oldData} />
       </div>
       <Modal
         modalOpen={openAdd}
         data={modalHandlerAddClose}
         name="Add Expense"
+        dataChangeUpdate={dataChangeUpdate}
       />
       <Modal
         modalOpen={openEdit}

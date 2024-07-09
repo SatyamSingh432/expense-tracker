@@ -5,7 +5,7 @@ const AddModal = (props) => {
   return (
     <ReactModal
       isOpen={props.modalOpen}
-      shouldCloseOnOverlayClick={props.data}
+      //   shouldCloseOnOverlayClick={props.data}
       onRequestClose={props.data}
       style={{
         overlay: {

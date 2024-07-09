@@ -2,7 +2,13 @@ import React from "react";
 import "./Input.css";
 const Input = (props) => {
   return (
-    <input className="input" type="text" placeholder={props.myPlaceHolder} />
+    <input
+      className="input"
+      type={props.dataType}
+      placeholder={props.myPlaceHolder}
+      value={props.value}
+      onChange={props.dataChange}
+    />
   );
 };
 export default Input;

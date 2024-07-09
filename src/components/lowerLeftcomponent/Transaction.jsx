@@ -7,7 +7,7 @@ const Transaction = (props) => {
   let getArray = JSON.parse(getString);
   const lastCompIndex = currentPage * 3;
   const firstCompIndex = lastCompIndex - 3;
-  const slicedData = getArray.slice(firstCompIndex, lastCompIndex);
+  const slicedData = props.renderData.slice(firstCompIndex, lastCompIndex);
   const noOfPages = Math.ceil(getArray.length / 3);
 
   const handlerPrevBtn = () => {
