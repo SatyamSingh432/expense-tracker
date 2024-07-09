@@ -80,8 +80,6 @@ const MainPage = () => {
   };
   const dataChangeUpdate = (data) => {
     setUpdatedData(data);
-    let string23 = JSON.stringify(data);
-    localStorage.setItem("data", string23);
   };
   useEffect(() => {
     let string = JSON.stringify(data);
